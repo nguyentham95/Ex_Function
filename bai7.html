@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Viết hàm nhận vào 3 số nguyên bất kỳ, 
+    trả về số nguyên có giá trị nhỏ nhất. -->
+</body>
+</html>
+<script>
+    let array = [];
+    
+        for (let i = 0 ; i < 3; i++){
+            array.push(+(prompt("Nhập vào mảng số thứ: " + i)))
+        }
+
+    function findMin(array) {
+        let result = "";
+
+        for (let i = 0; i < array.length; i++){
+            result = array[0];
+
+            if (array[i]< result){
+                result = array[i];
+            }
+        }
+        return result;
+    }
+    
+        
+    
+        let min = findMin(array);
+        document.write("Mảng số gồm: ["+ array +"] <br>");
+        document.write("Số nhỏ nhất trong dãy là: "+ min );
+</script>

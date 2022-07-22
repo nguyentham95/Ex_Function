@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Viết hàm nhận vào một số, 
+    kiểm tra xem nếu số đưa vào có phải là nguyên dương không. 
+    Nếu là nguyên dương trả về true, 
+    ngược lại trả về false. -->
+</body>
+</html>
+<script>
+    let num = prompt("Nhập vào 1 số: ");
+    let result = false;
+    
+
+    function checkNumber () {
+        // if(num < 0) {
+        //     return false;
+        // }
+         if (num > 0) {
+            result = true + "<br>" +  " Số " + num + " là số nguyên dương. ";
+        } else {
+            result = false + "<br>" + " Số " + num + " không phải là số nguyên dương.";
+        }
+        return result;
+    }
+    document.write(checkNumber());
+</script>
